@@ -6,3 +6,6 @@ resource "aws_instance" "terraformtest" {
     instance_type = "t2.small"
     key_name = "devops"
 }
+resource "aws_s3_bucket" "s3backendforterraformexample1" {
+    bucket = "mybackendbucketforterraform1"
+}
